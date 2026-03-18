@@ -151,6 +151,16 @@ class _LoginState extends State<Login> {
                           'Forgot Password?',
                           style: TextStyle(color: Colors.grey),
                         ),
+                        SizedBox(height: 40),
+                        Text(
+                          'Built with ❤️ by Awanda',
+                          style: TextStyle(
+                            color: Colors.grey.shade600,
+                            fontSize: 14,
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
+                        SizedBox(height: 20),
                       ],
                     ),
                   ),
