@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class AuthService {
-  final String baseUrl = "http://127.0.0.1:8000/api/login";
+  final String baseUrl = "http://192.168.137.1:8229/api/login";
 
   Future<String> login(String email, String password) async {
     final response = await http.post(
@@ -151,16 +151,6 @@ class _LoginState extends State<Login> {
                           'Forgot Password?',
                           style: TextStyle(color: Colors.grey),
                         ),
-                        SizedBox(height: 40),
-                        Text(
-                          'Built with ❤️ by Awanda',
-                          style: TextStyle(
-                            color: Colors.grey.shade600,
-                            fontSize: 14,
-                            fontStyle: FontStyle.italic,
-                          ),
-                        ),
-                        SizedBox(height: 20),
                       ],
                     ),
                   ),
